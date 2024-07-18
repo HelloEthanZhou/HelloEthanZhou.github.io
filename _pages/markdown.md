@@ -142,10 +142,10 @@ Do It Live
 
 ### 脚注
 
-脚注可用于澄清文本中的要点或引用信息。[^1]Markdown 支持数字脚注和文本脚注，只要数值是唯一的。[^note]
+脚注可用于澄清文本中的要点或引用信息[^1]。Markdown 支持数字脚注和文本脚注，只要数值是唯一的[^note]。
 
 ```markdown
-这是一段文本[^1]这是另一段文本[^note]
+这是一段文本[^1]。这是另一段文本[^note]。
 
 [^1]: 这是一个脚注
 [^note]: 这是另一个脚注。
@@ -154,63 +154,63 @@ Do It Live
 [^1]: 例如这个脚注。
 [^note]: 脚注标记使用文本时，名称中不允许有空格。
 
-## HTML Tags
+## HTML 标签
 
-### Address Tag
+### 地址标签
 
 <address>
   1 Infinite Loop<br /> Cupertino, CA 95014<br /> United States
 </address>
 
-### Anchor Tag (aka. Link)
+### 锚标签（又称链接）
 
-This is an example of a [link](http://github.com "Github").
+这是一个[链接](http://github.com "Github")的例子。
 
-### Abbreviation Tag
+### 缩写标签
 
-The abbreviation CSS stands for "Cascading Style Sheets".
+CSS 是 “层叠样式表 ”的缩写。
 
-*[CSS]: Cascading Style Sheets
+*[CSS]: 层叠样式表
 
-### Cite Tag
+### 引用标签
 
 "Code is poetry." ---<cite>Automattic</cite>
 
-### Code Tag
+### 代码标签
 
-You will learn later on in these tests that `word-wrap: break-word;` will be your best friend.
+在稍后的测试中，您将了解到 `word-wrap: break-word;` 将是您最好的朋友。
 
-You can also write larger blocks of code with syntax highlighting supported for some languages, such as Python:
+您还可以编写较大的代码块，某些语言（如 Python）支持语法高亮显示：
 
 ```python
 print('Hello World!')
 ```
 
-or R:
+或 R ：
 
 ```R
 print("Hello World!", quote = FALSE)
 ```
 
-### Strike Tag
+### 删除标签
 
-This tag will let you <strike>strikeout text</strike>.
+删除标签可以<strike>删除文本</strike>。
 
-### Emphasize Tag
+### 强调标签
 
-The emphasize tag should _italicize_ text.
+强调标签可以使文本_斜体化_。
 
-### Insert Tag
+### 插入标签
 
-This tag should denote <ins>inserted</ins> text.
+强调标签可以<ins>插入</ins>文本。
 
-### Keyboard Tag
+### 键盘标签
 
-This scarcely known tag emulates <kbd>keyboard text</kbd>, which is usually styled like the `<code>` tag.
+这个鲜为人知的标记模拟<kbd>键盘文本</kbd>,，其样式通常与 `代码` 标记相似。
 
-### Preformatted Tag
+### 预格式化标签
 
-This tag styles large blocks of code.
+该标签为大的代码块设置样式。
 
 <pre>
 .post-title {
@@ -222,28 +222,29 @@ This tag styles large blocks of code.
 }
 </pre>
 
-### Quote Tag
+### 引用标签
 
 <q>Developers, developers, developers&#8230;</q> &#8211;Steve Ballmer
 
-### Strong Tag
+### 黑体标签
 
-This tag shows **bold text**.
+强调标签可以使文本**黑体**。
 
-### Subscript Tag
+### 下划标签
 
-Getting our science styling on with H<sub>2</sub>O, which should push the "2" down.
+水的化学式为 H<sub>2</sub>O 。
 
-### Superscript Tag
+### 上划标签
 
-Still sticking with science and Isaac Newton's E = MC<sup>2</sup>, which should lift the 2 up.
+质能方程为 E = MC<sup>2</sup> 。
 
-### Variable Tag
+### 变量标签
 
-This allows you to denote <var>variables</var>.
+变量标签可以标记 <var>变量</var>。
 
 ***
-**Footnotes**
 
-The footnotes in the page will be returned following this line, return to the section on <a href="#footnotes">Markdown Footnotes</a>.
+**脚注**
+
+页面中的脚注将在这一行之后返回，请返回<a href=“#footnotes”>Markdown脚注</a>部分。
 
