@@ -1,78 +1,63 @@
 ---
 permalink: /markdown/
-title: "Markdown"
+title: "个人主页指南"
 author_profile: true
 redirect_from: 
   - /md/
   - /markdown.html
 ---
 
-## Locations of key files/directories
+## 关键文件
 
-* Basic config options: _config.yml
-* Top navigation bar config: _data/navigation.yml
-* Single pages: _pages/
-* Collections of pages are .md or .html files in:
+* 基本配置选项：_config.yml
+* 顶部导航栏配置：_data/navigation.yml
+* 单页：_pages/
+* 页面为 .md 或 .html 文件，见如下文件夹：
   * _publications/
   * _portfolio/
   * _posts/
   * _teaching/
   * _talks/
-* Footer: _includes/footer.html
-* Static files (like PDFs): /files/
-* Profile image (can set in _config.yml): images/profile.png
+* 页脚：_includes/footer.html
+* 静态文件（如 PDF）：/files/
+* 个人形象（在 _config.yml 中设置）：images/profile.png
 
-## Tips and hints
+## 技巧和提示
 
-* Name a file ".md" to have it render in markdown, name it ".html" to render in HTML.
-* Go to the [commit list](https://github.com/academicpages/academicpages.github.io/commits/master) (on your repo) to find the last version Github built with Jekyll. 
+* 将文件命名为“.md”，就能以 markdown 格式显示；命名为“.html”，就能以 HTML 格式显示。
+* 访问 [commit list](https://github.com/academicpages/academicpages.github.io/commits/master)（在你的 repo 上），查找 Github 使用 Jekyll 构建的最后一个版本。
   * Green check: successful build
   * Orange circle: building
   * Red X: error
   * No icon: not built
 
-## Resources
+## 资源
  * [Liquid syntax guide](https://shopify.github.io/liquid/tags/control-flow/)
  * [MathJax Documentation](https://docs.mathjax.org/en/latest/)
 
 ## MathJax 
 
-Support for MathJax Version 3.0 is included in the template:
+该模板支持 MathJax 3.0 版本：
 
 $$
-\displaylines{
-\nabla \cdot E= \frac{\rho}{\epsilon_0} \\\
-\nabla \cdot B=0 \\\
-\nabla \times E= -\partial_tB \\\
-\nabla \times B  = \mu_0 \left(J + \varepsilon_0 \partial_t E \right)
-}
+\mathrm{e}^{i \pi} + 1 = 0
 $$
 
-The default delimiters of `$$...$$` and `\\[...\\]` are supported for displayed mathematics, while `\\(...\\)` should be used for in-line mathematics (ex., \\(a^2 + b^2 = c^2\\))
+**注意**：由于 Academic Pages 使用 Markdown，因此在转义字符和新行方面会对 MathJax 和 LaTeX 产生一些干扰，不过存在一些[变通方法](https://math.codidact.com/posts/278763/278772#answer-278772)。
 
-**Note** that since Academic Pages uses Markdown which cases some interference with MathJax and LaTeX for escaping characters and new lines, although [some workarounds exist](https://math.codidact.com/posts/278763/278772#answer-278772).
+## Markdown 指南
 
-## Markdown guide
+Academic Pages 使用 [kramdown](https://kramdown.gettalong.org/index.html) 进行 Markdown 渲染，这与其他 Markdown 实现（如 GitHub 的实现）存在一些差异。除本指南外，请参阅 [kramdown 语法页面](https://kramdown.gettalong.org/syntax.html)获取完整文档。 
 
-Academic Pages uses [kramdown](https://kramdown.gettalong.org/index.html) for Markdown rendering, which has some differences from other Markdown implementations such as GitHub's. In addition to this guide, please see the [kramdown Syntax page](https://kramdown.gettalong.org/syntax.html) for full documentation.  
+## 小标题
 
-### Header three
+单行楷体引号：
 
-#### Header four
+> 引语很酷。
 
-##### Header five
+## 表格
 
-###### Header six
-
-## Blockquotes
-
-Single line blockquote:
-
-> Quotes are cool.
-
-## Tables
-
-### Table 1
+### 表格1
 
 | Entry            | Item   |                                                              |
 | --------         | ------ | ------------------------------------------------------------ |
@@ -80,7 +65,7 @@ Single line blockquote:
 | [Jane Doe](#)    | 2019   | Description of the item in the list                          |
 | [Doe Doe](#)     | 2022   | Description of the item in the list                          |
 
-### Table 2
+### 表格2
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -93,81 +78,81 @@ ll5   | cell6   |
 |=============================|
 | Foot1   | Foot2   | Foot3   |
 
-## Definition Lists
+## 定义列表
 
-Definition List Title
-:   Definition list division.
+定义列表标题
+:   定义列表划分
 
-Startup
-:   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
+启动
+:  创业公司或初创企业是指旨在寻找可重复、可扩展商业模式的公司或临时组织。
 
-#dowork
-:   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
+#“干得漂亮”
+:  由 Rob Dyrdek 和他的贴身保镖 Christopher "Big Black" Boykins 共同提出的 “干得漂亮”，既可以激励自己，也可以激励朋友。
 
 Do It Live
-:   I'll let Bill O'Reilly [explain](https://www.youtube.com/watch?v=O_HyZ5aW76c "We'll Do It Live") this one.
+:  我会让Bill O'Reilly [解释](https://www.youtube.com/watch?v=O_HyZ5aW76c “We'll Do It Live”)这个问题。
 
-## Unordered Lists (Nested)
+## 无序列表（嵌套）
 
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
+  * 无序列表1
+      * 无序列表1.1
+          * 无序列表1.1.1
+          * 无序列表1.1.2
+          * 无序列表1.1.3
+          * 无序列表1.1.4
+      * 无序列表1.2
+      * 无序列表1.3
+      * 无序列表1.4
+  * 无序列表2
+  * 无序列表3
+  * 无序列表4
 
-## Ordered List (Nested)
+## 有序列表（嵌套）
 
-  1. List item one 
-      1. List item one 
-          1. List item one
-          2. List item two
-          3. List item three
-          4. List item four
-      2. List item two
-      3. List item three
-      4. List item four
-  2. List item two
-  3. List item three
-  4. List item four
+  1. 有序列表1
+      1. 有序列表1.1
+          1. 有序列表1.1.1
+          2. 有序列表1.1.2
+          3. 有序列表1.1.3
+          4. 有序列表1.1.4
+      2. 有序列表1.2
+      3. 有序列表1.3
+      4. 有序列表1.4
+  2. 有序列表2
+  3. 有序列表3
+  4. 有序列表4
 
-## Buttons
+## 突出
 
-Make any link standout more when applying the `.btn` class.
+应用 `.btn` 时，可使任何链接更加突出。
 
-## Notices
+## 强调
 
-Basic notices or call-outs are supported using the following syntax:
+使用以下语法支持基本强调或呼出：
 
 ```markdown
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
+**注意！** 您还可以通过在段落后一行添加 `{: .notice}` 来添加强调。
 {: .notice}
 ```
 
-which wil render as:
+将显示为
 
-**Watch out!** You can also add notices by appending `{: .notice}` to the line following paragraph.
+**注意！** 您还可以通过在段落后一行添加 `{: .notice}` 来添加强调。
 {: .notice}
 
-### Footnotes
+### 脚注
 
-Footnotes can be useful for clarifying points in the text, or citing information.[^1] Markdown support numeric footnotes, as well as text as long as the values are unique.[^note]
+脚注可用于澄清文本中的要点或引用信息。[^1]Markdown 支持数字脚注和文本脚注，只要数值是唯一的。[^note]
 
 ```markdown
-This is the regular text.[^1] This is more regular text.[^note]
+这是一段文本[^1]这是另一段文本[^note]
 
-[^1]: This is the footnote itself.
-[^note]: This is another footnote.
+[^1]: 这是一个脚注
+[^note]: 这是另一个脚注。
 ```
 
-[^1]: Such as this footnote.
-[^note]: When using text for footnotes markers, no spaces are permitted in the name.
+[^1]: 例如这个脚注。
+[^note]: 脚注标记使用文本时，名称中不允许有空格。
 
 ## HTML Tags
 
