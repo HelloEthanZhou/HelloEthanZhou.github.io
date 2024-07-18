@@ -25,18 +25,18 @@ author:
   name             : "周梦轩"
   pronouns         : # example: "she/her"  
   bio              : "数学世界的门童"
-  location         : "Tianjin Beijing"
-  employer         : "Hebei University of Technology"
+  location         : "天津"
+  employer         : "河北工业大学"
   uri              : # URL
   email            : "ethanmxzhou@163.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
 
   # Repositories and software development
