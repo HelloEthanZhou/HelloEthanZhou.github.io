@@ -1,8 +1,8 @@
 ---
-layout: archive
+layout: single
 title: "学术"
-permalink: /note/
-author_profile: true
+permalink: /notes/
+author_profile: false
 redirect_from:
   - /resume
 ---
