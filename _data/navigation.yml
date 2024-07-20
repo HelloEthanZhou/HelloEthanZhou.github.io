@@ -3,7 +3,7 @@ main:
   - title: "学术"
     url: /cv/
     
-  - title: "项目"
+  - title: "笔记"
     url: /portfolio/
 
   - title: "博客"
