@@ -9,16 +9,17 @@ main:
   - title: "博客"
     url: /year-archive/
 
-  - title: "出版物"
-    url: /publications/
-  - title: "项目"
-    url: /portfolio/
+#  - title: "出版物"
+#    url: /publications/
 
-  - title: "讲座"
-    url: /talks/    
+#  - title: "项目"
+#    url: /portfolio/
 
-  - title: "授课"
-    url: /teaching/    
+#  - title: "讲座"
+#    url: /talks/    
+
+#  - title: "授课"
+#    url: /teaching/    
           
-  - title: "指南"
-    url: /markdown/
+#  - title: "指南"
+#    url: /markdown/
