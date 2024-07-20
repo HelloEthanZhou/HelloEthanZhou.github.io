@@ -2,9 +2,9 @@
 main:
   - title: "学术"
     url: /cv/
-
-  - title: "笔记"
-    url: /notes/
+    
+  - title: "项目"
+    url: /portfolio/
 
   - title: "博客"
     url: /year-archive/
@@ -17,9 +17,6 @@ main:
 
 #  - title: "授课"
 #    url: /teaching/    
-    
-#  - title: "项目"
-#    url: /portfolio/
-        
+          
 #  - title: "指南"
 #    url: /markdown/
