@@ -1,10 +1,11 @@
 ---
 layout: single
-title: "笔记标题"
+title: "博客标题"
+date: 2024-05-01
 permalink: /notes/
 author_profile: false
 redirect_from:
   - /resume
 ---
 
-这是测试笔记。
+这是测试博客。

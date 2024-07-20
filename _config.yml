@@ -215,6 +215,9 @@ collections:
   notes:
     output: true
     permalink: /:collection/:path/ # notes 集合的 URL 结构
+  blogs:
+    output: true
+    permalink: /:collection/:path/ # notes 集合的 URL 结构
 
 # 默认设置
 defaults:
@@ -222,6 +225,13 @@ defaults:
   - scope:
       path: "" # 应用范围的路径，此处为空表示对所有路径有效
       type: notes # 设置类型为 posts（文章）
+    values:
+      layout: single # 默认布局为单页布局
+      author_profile: false # 启用作者简介
+  # _blogs
+  - scope:
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: blogs # 设置类型为 posts（文章）
     values:
       layout: single # 默认布局为单页布局
       author_profile: false # 启用作者简介
