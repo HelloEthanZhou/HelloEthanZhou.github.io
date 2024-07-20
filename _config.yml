@@ -73,42 +73,43 @@ author:
   zhihu            : # URL
 
 
-# Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false #change to true to add link to talkmap on talks page
+# 页面设置
+teaser                   :  # 预告图像的文件名，放置在 /images/ 目录中，例如 "500x300.png"
+breadcrumbs              : false # 面包屑导航，设置为 true 启用，默认 false
+words_per_minute         : 160 # 每分钟阅读的单词数，用于估算阅读时间
+future                   : false # 是否显示未来发布的文章
+read_more                : "disabled" # 如果启用，在摘要后添加 "阅读更多" 链接
+talkmap_link             : false # 设置为 true 在讲座页面添加 talkmap 链接
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider               : # 评论提供者，默认 false，可选 "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname            : # Disqus 的简短名称
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server               : # Discourse 服务器 URL，例如：https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid                : # Facebook 应用 ID
+    num_posts            : # 显示的评论数量，默认 5
+    colorscheme          : # 颜色方案，默认 "light"，可选 "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields          : ['name', 'email', 'url', 'message'] # Staticman 允许的字段
+  branch                 : "gh-pages" # Staticman 使用的分支，"master" 或 "gh-pages"
+  commitMessage          : "New comment." # 提交评论时的提交消息
+  filename               : comment-{@timestamp} # 评论文件的命名格式
+  format                 : "yml" # 文件格式
+  moderation             : true # 是否启用评论审核
+  path                   : "_data/comments/{options.slug}" # 评论保存路径
+  requiredFields         : ['name', 'email', 'message'] # 必填字段
   transforms:
-    email                : "md5"
+    email                : "md5" # 将电子邮件地址转换为 MD5 散列
   generatedFields:
     date:
-      type               : "date"
+      type               : "date" # 生成的日期字段类型
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+        format           : "iso8601" # 日期格式，默认 "iso8601"，可选 "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+  hide                   : false # 设置为 true 隐藏页脚的 RSS feed 链接
+  path                   : # RSS feed 路径，默认使用 feed.xml
+
 
 
 # SEO Related
@@ -197,78 +198,86 @@ kramdown:
   enable_coderay: false
 
 
-# Collections
+# 集合配置
 collections:
   teaching:
-    output: true
-    permalink: /:collection/:path/
+    output: false # 是否生成 teaching 集合的页面
+    permalink: /:collection/:path/ # teaching 集合的 URL 结构
   publications:
-    output: true
-    permalink: /:collection/:path/
+    output: false # 是否生成 publications 集合的页面
+    permalink: /:collection/:path/ # publications 集合的 URL 结构
   portfolio:
-    output: true
-    permalink: /:collection/:path/
+    output: false # 是否生成 portfolio 集合的页面
+    permalink: /:collection/:path/ # portfolio 集合的 URL 结构
   talks:
+    output: false # 是否生成 talks 集合的页面
+    permalink: /:collection/:path/ # talks 集合的 URL 结构
+  notes:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path/ # notes 集合的 URL 结构
 
-
-# Defaults
+# 默认设置
 defaults:
+  # _notes
+  - scope:
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: notes # 设置类型为 posts（文章）
+    values:
+      layout: single # 默认布局为单页布局
+      author_profile: false # 启用作者简介
   # _posts
   - scope:
-      path: ""
-      type: posts
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: posts # 设置类型为 posts（文章）
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
+      layout: single # 默认布局为单页布局
+      author_profile: false # 启用作者简介
+      read_time: false # 显示阅读时间
+      comments: false # 启用评论
+      share: false # 启用分享功能
+      related: false # 显示相关文章
   # _pages
   - scope:
-      path: ""
-      type: pages
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: pages # 设置类型为 pages（页面）
     values:
-      layout: single
-      author_profile: true
+      layout: single # 默认布局为单页布局
+      author_profile: false # 启用作者简介
   # _teaching
   - scope:
-      path: ""
-      type: teaching
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: teaching # 设置类型为 teaching（教学）
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      layout: single # 默认布局为单页布局
+      author_profile: true # 启用作者简介
+      share: true # 启用分享功能
+      comments: true # 启用评论
   # _publications
   - scope:
-      path: ""
-      type: publications
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: publications # 设置类型为 publications（出版物）
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
+      layout: single # 默认布局为单页布局
+      author_profile: true # 启用作者简介
+      share: true # 启用分享功能
+      comments: true # 启用评论
   # _portfolio
   - scope:
-      path: ""
-      type: portfolio
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: portfolio # 设置类型为 portfolio（作品集）
     values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
+      layout: single # 默认布局为单页布局
+      author_profile: true # 启用作者简介
+      share: true # 启用分享功能
+      comment: true # 启用评论
   # _talks
   - scope:
-      path: ""
-      type: talks
+      path: "" # 应用范围的路径，此处为空表示对所有路径有效
+      type: talks # 设置类型为 talks（讲座）
     values:
-      layout: talk
-      author_profile: true
-      share: true
-
+      layout: talk # 默认布局为讲座布局
+      author_profile: true # 启用作者简介
+      share: true # 启用分享功能
 
 # Sass/SCSS
 sass:

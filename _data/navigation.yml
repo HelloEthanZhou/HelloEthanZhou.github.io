@@ -4,19 +4,21 @@ main:
     url: /cv/
     
   - title: "笔记"
-    url: /portfolio/
+    url: /notes/
 
   - title: "博客"
     url: /year-archive/
 
-#  - title: "出版物"
-#    url: /publications/
+  - title: "出版物"
+    url: /publications/
+  - title: "项目"
+    url: /portfolio/
 
-#  - title: "演讲"
-#    url: /talks/    
+  - title: "讲座"
+    url: /talks/    
 
-#  - title: "授课"
-#    url: /teaching/    
+  - title: "授课"
+    url: /teaching/    
           
-#  - title: "指南"
-#    url: /markdown/
+  - title: "指南"
+    url: /markdown/
