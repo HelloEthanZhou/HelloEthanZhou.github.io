@@ -15,7 +15,7 @@ def search_files(directory, keyword):
     return matches
 
 directory = r"D:\OneDrive - stu.hebut.edu.cn\文件\数学\HelloEthanZhou.github.io"
-keyword = "Published"
+keyword = "Sitemap"
 
 matching_files = search_files(directory, keyword)
 print("包含 '{}' 字段的文件在: ".format(keyword))
