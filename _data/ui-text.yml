@@ -270,8 +270,8 @@ it-IT:
 # -----------------
 zh: &DEFAULT_ZH
   page                       : "页面"
-  pagination_previous        : "上一页"
-  pagination_next            : "下一页"
+  pagination_previous        : "上一篇"
+  pagination_next            : "下一篇"
   breadcrumb_home_label      : "主页"
   breadcrumb_separator       : "/"
   toc_label                  : "本页内容"
