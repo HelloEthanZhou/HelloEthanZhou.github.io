@@ -7,10 +7,7 @@ main:
     url: /notes/
 
   - title: "博客"
-    url: /blogs/
-
-#  - title: "博客"
-#    url: /year-archive/
+    url: /posts/
 
 #  - title: "出版物"
 #    url: /publications/
