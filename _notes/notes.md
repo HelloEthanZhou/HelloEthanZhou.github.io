@@ -54,4 +54,4 @@ permalink: /notes/
   - 范畴论
     - [报告](https://helloethanzhou.github.io/files/notes/范畴论介绍.pdf)
   - Mathematica 在微分几何研究中的交互式应用
-    - [报告](https://helloethanzhou.github.io/files/notes/Mathematica 在微分几何研究中的交互式应用.pdf)
+    - [论文](https://helloethanzhou.github.io/files/notes/Mathematica 在微分几何研究中的交互式应用.pdf)
